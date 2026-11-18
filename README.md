@@ -2,6 +2,8 @@
 
 A machine learning project that predicts house sale prices using the Ames, Iowa housing dataset (Kaggle: *House Prices - Advanced Regression Techniques*). I compared three regression models and tested them with 5-fold cross-validation.
 
+**🔗 Live demo:** [Try the app](https://house-price-predictor-5xewysvgmxn9hag88fjkjm.streamlit.app)
+
 ## Results
 
 | Model | Test RMSE (log) | Test R² | Avg error | CV RMSE (5-fold) |
@@ -40,15 +42,18 @@ Python, pandas, NumPy, scikit-learn, matplotlib, seaborn, Jupyter
 
 ## How to run
 
+**The app (locally):**
+
 ```bash
 git clone https://github.com/NethmalGunathilake/house-price-predictor.git
 cd house-price-predictor
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
+streamlit run app.py
 ```
 
-Download `train.csv` from the [Kaggle competition page](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data), place it in a `data/` folder, then open `notebooks/01_exploration.ipynb` and run all cells.
+**The notebook:** `pip install -r requirements-notebook.txt`, download `train.csv` from the [Kaggle competition page](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data) into a `data/` folder, then open `notebooks/01_exploration.ipynb`.
 
 ## Author
 
